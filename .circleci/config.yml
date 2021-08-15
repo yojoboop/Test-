@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notion Stock Widget</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="light">
+    <!-- Light/Dark Btn -->
+    <div class="settings">
+      <div class="modes">
+        <button class="light">Light</button>
+        <button class="dark">Dark</button>
+      </div>
+    </div>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" id="dark">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a href="https://www.tradingview.com" rel="noopener" target="_blank"
+          ><span class="blue-text">Market Data</span></a
+        >
+        by TradingView
+      </div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js"
+        async
+      >
+          {
+          "width": "100%",
+          "height": "600",
+          "symbolsGroups": [
+          {
+            "name": "Stocks",
+            "symbols": [
+              
+          "name": "FOREXCOM:SPXUSD",
+          "displayName": "S&P 500"
+        },
+        {
+          "name": "FOREXCOM:NSXUSD",
+          "displayName": "Nasdaq 100"
+        },
+        {
+          "name": "FOREXCOM:DJI",
+          "displayName": "Dow 30"
+        },
+        {
+          "name": "INDEX:DEU30",
+          "displayName": "DAX Index"
+        },
+        {
+          "name": "FOREXCOM:UKXGBP",
+          "displayName": "UK 100"
+        },
+        {
+          "name": "AMEX:VOO",
+          "displayName": "Vanguard S&P go brrrr"
+        },
+        {
+          "name": "AMEX:VTI",
+          "displayName": "TotAl stOCk mARkET"
+        },
+        {
+          "name": "NASDAQ:AAPL",
+          "displayName": "big fruit investment "
+        },
+        {
+          "name": "NASDAQ:AMZN",
+          "displayName": "JEFF BEZOSSS"
+        },
+        {
+          "name": "NYSE:JNJ",
+          "displayName": "the guys who supplied my baby oil"
+        },
+        {
+          "name": "NASDAQ:TSLA",
+          "displayName": "DADDY MUSK"
+        },
+        {
+          "name": "NYSE:DIS",
+          "displayName": "goofy ass"
+        },
+        {
+          "name": "CAPITALCOM:GOOG",
+          "displayName": "MMMM"
+        },
+        {
+          "name": "NASDAQ:FB",
+          "displayName": "shit my aunt uses "
+        },
+        {
+          "name": "NYSE:KO",
+          "displayName": "warren buffets favorite "
+        }
+      ]
+    },
+    {
+      "name": "Commodities",
+      "originalName": "Commodities",
+      "symbols": [
+        {
+          "name": "CME_MINI:ES1!",
+          "displayName": "S&P 500"
+        },
+        {
+          "name": "CME:6E1!",
+          "displayName": "Euro"
+        },
+        {
+          "name": "COMEX:GC1!",
+          "displayName": "Gold"
+        },
+        {
+          "name": "NYMEX:CL1!",
+          "displayName": "Crude Oil"
+        },
+        {
+          "name": "NYMEX:NG1!",
+          "displayName": "Natural Gas"
+        },
+        {
+          "name": "CBOT:ZC1!",
+          "displayName": "Corn"
+        }
+      ]
+    },
+    {
+      "name": "Bonds",
+      "originalName": "Bonds",
+      "symbols": [
+        {
+          "name": "CME:GE1!",
+          "displayName": "Eurodollar"
+        },
+        {
+          "name": "CBOT:ZB1!",
+          "displayName": "T-Bond"
+        },
+        {
+          "name": "CBOT:UB1!",
+          "displayName": "Ultra T-Bond"
+        },
+        {
+          "name": "EUREX:FGBL1!",
+          "displayName": "Euro Bund"
+        },
+        {
+          "name": "EUREX:FBTP1!",
+          "displayName": "Euro BTP"
+        },
+        {
+          "name": "EUREX:FGBM1!",
+          "displayName": "Euro BOBL"
+        }
+      ]
+    },
+    {
+      "name": "Forex",
+      "originalName": "Forex",
+      "symbols": [
+        {
+          "name": "FX:EURUSD"
+        },
+        {
+          "name": "FX:GBPUSD"
+        },
+        {
+          "name": "FX:USDJPY"
+        },
+        {
+          "name": "FX:USDCHF"
+        },
+        {
+          "name": "FX:AUDUSD"
+        },
+        {
+          "name": "FX:USDCAD"
+        }
+      ]
+          },
+          {
+            "name": "ETFs",
+            "symbols": [
+              {
+                "name": "NASDAQ:BOTZ",
+                "displayName": "BOTZ - Robots & AI"
+              },
+              {
+                "name": "AMEX:IPAY",
+                "displayName": "IPAY - Mobile/FinTech"
+              },
+              {
+                "name": "NASDAQ:QCLN",
+                "displayName": "QCLN - Clean Energy Index"
+              },
+              {
+                "name": "NASDAQ:SKYY",
+                "displayName": "SKYY - Cloud Computing"
+              },
+              {
+                "name": "TSX:TEC",
+                "displayName": "TEC - Technology Index"
+              },
+              {
+                "name": "TSX:XIT",
+                "displayName": "XIT - CAD Tech Index"
+              },
+              {
+                "name": "TSX:ZRE",
+                "displayName": "ZRE - REITs"
+              },
+              {
+                "name": "TSX:ZUT",
+                "displayName": "ZUT - Utilities"
+              },
+              {
+                "name": "TSX:ZWB",
+                "displayName": "ZWB - CC Banks"
+              },
+              {
+                "name": "TSX:ZWU",
+                "displayName": "ZWU - CC Utilities"
+              }
+            ]
+          },
+          {
+            "name": "Watch List",
+            "symbols": [
+              {
+                "name": "NASDAQ:CRSR",
+                "displayName": "CRSR - Corsair"
+              },
+              {
+                "name": "NYSE:DM",
+                "displayName": "DM - Desktop Metal"
+              },
+              {
+                "name": "NYSE:PRLB",
+                "displayName": "PRLB - PROTO Labs"
+              },
+              {
+                "name": "AMEX:PRNT",
+                "displayName": "PRNT - 3D Printing"
+              },
+              {
+                "name": "NYSE:SQ",
+                "displayName": "SQ - Square"
+              }
+            ]
+          }
+        ],
+          "showSymbolLogo": true,
+          "colorTheme": "dark",
+          "isTransparent": true,
+          "locale": "en"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" id="light">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a href="https://www.tradingview.com" rel="noopener" target="_blank"
+          ><span class="blue-text">Market Data</span></a
+        >
+        by TradingView
+      </div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js"
+        async
+      >
+      {
+        "width": "100%",
+        "height": "600",
+        "symbolsGroups": [
+        {
+          "name": "Stocks",
+          "symbols": [
+            {
+              "name": "NASDAQ:AMZN",
+              "displayName": "AMZN - Amazon"
+            },
+            {
+              "name": "TSX:BB",
+              "displayName": "BB - Blackberry"
+            },
+            {
+              "name": "TSX:BEPC",
+              "displayName": "BEPC - Brookfield Renewable"
+            },
+            {
+              "name": "TSX:BEP.UN",
+              "displayName": "BEP.UN - Brookfield Renewable"
+            },
+            {
+              "name": "TSX:BIP.UN",
+              "displayName": "BIP.UN - Brookfield Infrastructure"
+            },
+            {
+              "name": "TSX:BMO",
+              "displayName": "BMO - Bank of Montreal"
+            },
+            {
+              "name": "NASDAQ:CLAR",
+              "displayName": "CLAR - Clarus (BD)"
+            },
+            {
+              "name": "NYSE:GME",
+              "displayName": "GME - Gamestop"
+            },
+            {
+              "name": "TSXV:GRN",
+              "displayName": "GRN.V - Greenlane Renewables"
+            },
+            {
+              "name": "TSX:GRT.UN",
+              "displayName": "GRT.UN - Granite REIT"
+            },
+            {
+              "name": "TSX:LSPD",
+              "displayName": "LSPD - Lightspeed"
+            },
+            {
+              "name": "NASDAQ:MSFT",
+              "displayName": "MSFT - Microsoft"
+            },
+            {
+              "name": "NYSE:PLTR",
+              "displayName": "PLTR - Palantir"
+            },
+            {
+              "name": "TSX:VET",
+              "displayName": "VET - Vermillion Energy"
+            }
+          ]
+        },
+        {
+          "name": "ETFs",
+          "symbols": [
+            {
+              "name": "NASDAQ:BOTZ",
+              "displayName": "BOTZ - Robots & AI"
+            },
+            {
+              "name": "AMEX:IPAY",
+              "displayName": "IPAY - Mobile/FinTech"
+            },
+            {
+              "name": "NASDAQ:QCLN",
+              "displayName": "QCLN - Clean Energy Index"
+            },
+            {
+              "name": "NASDAQ:SKYY",
+              "displayName": "SKYY - Cloud Computing"
+            },
+            {
+              "name": "TSX:TEC",
+              "displayName": "TEC - Technology Index"
+            },
+            {
+              "name": "TSX:XIT",
+              "displayName": "XIT - CAD Tech Index"
+            },
+            {
+              "name": "TSX:ZRE",
+              "displayName": "ZRE - REITs"
+            },
+            {
+              "name": "TSX:ZUT",
+              "displayName": "ZUT - Utilities"
+            },
+            {
+              "name": "TSX:ZWB",
+              "displayName": "ZWB - CC Banks"
+            },
+            {
+              "name": "TSX:ZWU",
+              "displayName": "ZWU - CC Utilities"
+            }
+          ]
+        },
+        {
+          "name": "Watch List",
+          "symbols": [
+            {
+              "name": "NASDAQ:CRSR",
+              "displayName": "CRSR - Corsair"
+            },
+            {
+              "name": "NYSE:DM",
+              "displayName": "DM - Desktop Metal"
+            },
+            {
+              "name": "NYSE:PRLB",
+              "displayName": "PRLB - PROTO Labs"
+            },
+            {
+              "name": "AMEX:PRNT",
+              "displayName": "PRNT - 3D Printing"
+            },
+            {
+              "name": "NYSE:SQ",
+              "displayName": "SQ - Square"
+            }
+          ]
+        }
+      ],
+        "showSymbolLogo": true,
+        "colorTheme": "light",
+        "isTransparent": true,
+        "locale": "en"
+      }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <!-- Custom JS for widget styling BEGIN -->
+    <script src="app.js"></script>
+    <!-- Custom JS END -->
+  </body>
+</html>
